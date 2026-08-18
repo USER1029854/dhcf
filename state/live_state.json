@@ -1,0 +1,103 @@
+{
+  "config": {
+    "ETH": {
+      "MCR": 1100000000000000000,
+      "CCR": 1500000000000000000,
+      "MIN_NET_DEBT": 2000000000000000000000,
+      "PERCENT_DIVISOR": 100,
+      "BORROWING_FEE_FLOOR": 5000000000000000,
+      "MAX_BORROWING_FEE": 50000000000000000,
+      "REDEMPTION_FEE_FLOOR": 5000000000000000,
+      "DCHF_GAS_COMPENSATION": 200000000000000000000,
+      "redemptionBlock": 1665335075
+    },
+    "WBTC": {
+      "MCR": 1100000000000000000,
+      "CCR": 1500000000000000000,
+      "MIN_NET_DEBT": 2000000000000000000000,
+      "PERCENT_DIVISOR": 100,
+      "BORROWING_FEE_FLOOR": 5000000000000000,
+      "MAX_BORROWING_FEE": 50000000000000000,
+      "REDEMPTION_FEE_FLOOR": 5000000000000000,
+      "DCHF_GAS_COMPENSATION": 200000000000000000000,
+      "redemptionBlock": 1665335771
+    },
+    "DECIMAL_PRECISION": 1000000000000000000,
+    "REDEMPTION_BLOCK_DAY": 14
+  },
+  "balances": {
+    "ActivePool": {
+      "eth_actual": 6261604904558029635,
+      "wbtc_actual": 248580886,
+      "assetBal_ETH": 6261604904558029635,
+      "assetBal_WBTC": 2485806034676980273,
+      "DCHFDebt_ETH": 7498897412708081306161,
+      "DCHFDebt_WBTC": 13511078130350950599786
+    },
+    "DefaultPool": {
+      "eth_actual": 20310969969442704005,
+      "wbtc_actual": 8606624,
+      "assetBal_ETH": 20310969969442704005,
+      "assetBal_WBTC": 86066246830790323,
+      "DCHFDebt_ETH": 24887915798724674015367,
+      "DCHFDebt_WBTC": 6684129289349818480389
+    },
+    "CollSurplusPool": {
+      "eth_actual": 23705418203861144502,
+      "wbtc_actual": 232048199,
+      "assetBal_ETH": 23705418203861144502,
+      "assetBal_WBTC": 2320482039140539021
+    },
+    "SP_ETH": {
+      "eth_actual": 16483935583439990371,
+      "assetBalance": 16483935583439990371,
+      "totalDCHFDeposits": 0
+    },
+    "SP_WBTC": {
+      "wbtc_actual": 23461150,
+      "assetBalance": 234607973060486174,
+      "totalDCHFDeposits": 0
+    }
+  },
+  "oracle": {
+    "status": 0,
+    "TIMEOUT": 14400,
+    "MAX_PRICE_DEVIATION_FROM_PREVIOUS_ROUND": 500000000000000000,
+    "MAX_PRICE_DIFFERENCE_BETWEEN_ORACLES": 50000000000000000,
+    "lastGoodPrice_ETH": 1690627600000000000000,
+    "lastGoodIndex_ETH": 1267973520000000000,
+    "lastGoodPrice_WBTC": 70452698555930000000000,
+    "lastGoodIndex_WBTC": 1272556050000000000,
+    "chainlink_ETHUSD": {
+      "answer": 189289783661,
+      "updatedAt": 1787027387
+    },
+    "chainlink_BTCUSD": {
+      "answer": 6407140943685,
+      "updatedAt": 1787027267
+    },
+    "chainlink_CHFUSD": {
+      "answer": 123181532,
+      "updatedAt": 1787026379
+    }
+  },
+  "issuance": {
+    "monToken": "0x1ea48b9965bb5086f3b468e50ed93888a661fc17",
+    "CI_MON_balance": 108989839941453945310611,
+    "MONSupplyCap_SP_ETH": 5279578750000000000000000,
+    "totalMONIssued_SP_ETH": 5279578750000000000000000,
+    "monDistributionsByPool_SP_ETH": 1240079365079365079,
+    "MONSupplyCap_SP_WBTC": 5279578750000000000000000,
+    "totalMONIssued_SP_WBTC": 5279578750000000000000000,
+    "monDistributionsByPool_SP_WBTC": 1240079365079365079
+  },
+  "tokens": {
+    "DCHF_totalSupply": 52582020631133524401703,
+    "MON_totalSupply": 100000000000000000000000000,
+    "MON_treasury": "0x83737eae72ba7597b36494d723fbf58cafee8a69"
+  },
+  "staking": {
+    "paused": false,
+    "MON_staked_in_contract": 14605474904878174026398713
+  }
+}

@@ -1,0 +1,18 @@
+Unprivileged caller: 0x00000000000000000000000000000000DeaDBeef 
+
+SP_ETH.offset(1e18,1e18)                       -> REVERT: execution reverted: SortedTroves: Caller is not the TroveManager
+SP_WBTC.offset(1e18,1e18)                      -> REVERT: execution reverted: SortedTroves: Caller is not the TroveManager
+DCHF.sendToPool(att,att,1e18)                  -> REVERT: execution reverted: DCHF: Caller is not the StabilityPool
+DCHF.returnFromPool(att,att,1e18)              -> REVERT: execution reverted: DCHF: Caller is neither TroveManager nor StabilityPool
+DCHF.burn(att,1e18)                            -> REVERT: execution reverted: DCHF: Caller is neither BorrowerOperations nor TroveManager 
+SortedTroves.insert(ETH,att,1e18,0,0)          -> REVERT: execution reverted: SortedTroves: Caller is neither BO nor TroveM
+SortedTroves.remove(ETH,att)                   -> REVERT: execution reverted: SortedTroves: Caller is not the TroveManager
+CollSurplus.claimColl(ETH,att)                 -> REVERT: execution reverted: CollSurplusPool: Caller is not Borrower Operations
+CollSurplus.accountSurplus(ETH,att,1e18)       -> REVERT: execution reverted: CollSurplusPool: Caller is not TroveManager
+MONStaking.increaseF_Asset(ETH,1e18)           -> REVERT: execution reverted: MONStaking: caller is not TroveM
+MONStaking.increaseF_DCHF(1e18)                -> REVERT: execution reverted: MONStaking: caller is not BorrowerOps
+CommIssuance.issueMON()                        -> REVERT: execution reverted: CommunityIssuance: caller is not SP
+CommIssuance.sendMON(att,1e18)                 -> REVERT: execution reverted: CommunityIssuance: caller is not SP
+DefaultPool.sendAssetToActivePool(ETH,1e18)    -> REVERT: execution reverted: DefaultPool: Caller is not the TroveManager
+TMHelpers.closeTrove(ETH,att)                  -> REVERT: execution reverted: WA
+TMHelpers.redistributeDebtAndColl              -> REVERT: execution reverted: WA

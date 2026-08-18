@@ -1,0 +1,87 @@
+{
+  "ActivePool": {
+    "owner": "0x0000000000000000000000000000000000000000",
+    "tag": "RENOUNCED",
+    "initialized": true
+  },
+  "StabilityPool_ETH": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": true
+  },
+  "StabilityPool_WBTC": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": true
+  },
+  "TroveManager": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": true
+  },
+  "TroveManagerHelpers": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": true
+  },
+  "StabilityPoolManager": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": true
+  },
+  "BorrowerOperations": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": true
+  },
+  "DefaultPool": {
+    "owner": "0x0000000000000000000000000000000000000000",
+    "tag": "RENOUNCED",
+    "initialized": true
+  },
+  "CollSurplusPool": {
+    "owner": "0x0000000000000000000000000000000000000000",
+    "tag": "RENOUNCED",
+    "initialized": true
+  },
+  "DCHFToken": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": "n/a"
+  },
+  "DfrancParameters": {
+    "owner": "Max calls per sec rate limit reached (3/sec)",
+    "tag": "",
+    "initialized": true
+  },
+  "AdminContract": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": true
+  },
+  "SortedTroves": {
+    "owner": "0x0000000000000000000000000000000000000000",
+    "tag": "RENOUNCED",
+    "initialized": true
+  },
+  "CommunityIssuance": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": true
+  },
+  "MONStaking": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": "n/a"
+  },
+  "PriceFeed": {
+    "owner": "0x83737eae72ba7597b36494d723fbf58cafee8a69",
+    "tag": "=Safe 2/3",
+    "initialized": true
+  },
+  "MONToken": {
+    "owner": "Max calls per sec rate limit reached (3/sec)",
+    "tag": "",
+    "initialized": "n/a"
+  }
+}

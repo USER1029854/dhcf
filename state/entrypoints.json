@@ -1,0 +1,2866 @@
+{
+ "ActivePool": [
+  {
+   "fn": "setAddresses",
+   "line": 54,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "getAssetBalance",
+   "line": 93,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getDCHFDebt",
+   "line": 97,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "sendAsset",
+   "line": 103,
+   "vis": "external",
+   "mods": [
+    "callerIsBOorTroveMorSP",
+    "nonReentrant",
+    "override"
+   ]
+  },
+  {
+   "fn": "isERC20DepositContract",
+   "line": 132,
+   "vis": "private",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "increaseDCHFDebt",
+   "line": 138,
+   "vis": "external",
+   "mods": [
+    "callerIsBOorTroveM",
+    "override"
+   ]
+  },
+  {
+   "fn": "decreaseDCHFDebt",
+   "line": 147,
+   "vis": "external",
+   "mods": [
+    "callerIsBOorTroveMorSP",
+    "override"
+   ]
+  },
+  {
+   "fn": "receivedERC20",
+   "line": 189,
+   "vis": "external",
+   "mods": [
+    "callerIsBorrowerOperationOrDefaultPool",
+    "override"
+   ]
+  }
+ ],
+ "DefaultPool": [
+  {
+   "fn": "setAddresses",
+   "line": 39,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "getAssetBalance",
+   "line": 70,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getDCHFDebt",
+   "line": 74,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "sendAssetToActivePool",
+   "line": 80,
+   "vis": "external",
+   "mods": [
+    "callerIsTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "increaseDCHFDebt",
+   "line": 104,
+   "vis": "external",
+   "mods": [
+    "callerIsTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "decreaseDCHFDebt",
+   "line": 113,
+   "vis": "external",
+   "mods": [
+    "callerIsTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "receivedERC20",
+   "line": 137,
+   "vis": "external",
+   "mods": [
+    "callerIsActivePool",
+    "override"
+   ]
+  }
+ ],
+ "CollSurplusPool": [
+  {
+   "fn": "setAddresses",
+   "line": 36,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "getAssetBalance",
+   "line": 63,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getCollateral",
+   "line": 67,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "accountSurplus",
+   "line": 78,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "claimColl",
+   "line": 91,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "receivedERC20",
+   "line": 119,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsBorrowerOperations",
+   "line": 126,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsTroveManager",
+   "line": 133,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsActivePool",
+   "line": 140,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  }
+ ],
+ "StabilityPool": [
+  {
+   "fn": "getNameBytes",
+   "line": 119,
+   "vis": "external",
+   "mods": [
+    "override",
+    "pure"
+   ]
+  },
+  {
+   "fn": "getAssetType",
+   "line": 123,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "setAddresses",
+   "line": 127,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "getAssetBalance",
+   "line": 172,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getTotalDCHFDeposits",
+   "line": 176,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "provideToSP",
+   "line": 188,
+   "vis": "external",
+   "mods": [
+    "nonReentrant",
+    "override"
+   ]
+  },
+  {
+   "fn": "withdrawFromSP",
+   "line": 230,
+   "vis": "external",
+   "mods": [
+    "nonReentrant",
+    "override"
+   ]
+  },
+  {
+   "fn": "withdrawAssetGainToTrove",
+   "line": 275,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "_triggerMONIssuance",
+   "line": 317,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_updateG",
+   "line": 322,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_computeMONPerUnitStaked",
+   "line": 343,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "offset",
+   "line": 373,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "_computeRewardsPerUnitStaked",
+   "line": 394,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_updateRewardSumAndProduct",
+   "line": 437,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_moveOffsetCollAndDebt",
+   "line": 490,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_decreaseDCHF",
+   "line": 503,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "getDepositorAssetGain",
+   "line": 516,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getDepositorAssetGain1e18",
+   "line": 532,
+   "vis": "public",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_getAssetGainFromSnapshots",
+   "line": 544,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "getDepositorMONGain",
+   "line": 578,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_getMONGainFromSnapshots",
+   "line": 588,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "getCompoundedDCHFDeposit",
+   "line": 621,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getCompoundedTotalStake",
+   "line": 641,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_getCompoundedStakeFromSnapshots",
+   "line": 651,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_sendDCHFtoStabilityPool",
+   "line": 699,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_sendAssetGainToDepositor",
+   "line": 706,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_sendDCHFToDepositor",
+   "line": 725,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_updateDepositAndSnapshots",
+   "line": 736,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_updateStakeAndSnapshots",
+   "line": 764,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_payOutMONGains",
+   "line": 784,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_requireCallerIsActivePool",
+   "line": 795,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsTroveManager",
+   "line": 802,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireNoUnderCollateralizedTroves",
+   "line": 809,
+   "vis": "public",
+   "mods": []
+  },
+  {
+   "fn": "_requireUserHasDeposit",
+   "line": 819,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_requireNonZeroAmount",
+   "line": 823,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_requireUserHasTrove",
+   "line": 827,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireUserHasETHGain",
+   "line": 834,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "receivedERC20",
+   "line": 841,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  }
+ ],
+ "StabilityPoolManager": [
+  {
+   "fn": "setAddresses",
+   "line": 23,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "setAdminContract",
+   "line": 31,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "isStabilityPool",
+   "line": 37,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "addStabilityPool",
+   "line": 41,
+   "vis": "external",
+   "mods": [
+    "isController",
+    "override"
+   ]
+  },
+  {
+   "fn": "removeStabilityPool",
+   "line": 60,
+   "vis": "external",
+   "mods": [
+    "isController"
+   ]
+  },
+  {
+   "fn": "getAssetStabilityPool",
+   "line": 68,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "unsafeGetAssetStabilityPool",
+   "line": 78,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  }
+ ],
+ "TroveManager": [
+  {
+   "fn": "setAddresses",
+   "line": 49,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "override"
+   ]
+  },
+  {
+   "fn": "isContractTroveManager",
+   "line": 83,
+   "vis": "public",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "liquidate",
+   "line": 90,
+   "vis": "external",
+   "mods": [
+    "_asset",
+    "_borrower",
+    "override",
+    "troveIsActive"
+   ]
+  },
+  {
+   "fn": "_liquidateNormalMode",
+   "line": 103,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_liquidateRecoveryMode",
+   "line": 165,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_getOffsetAndRedistributionVals",
+   "line": 338,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_getCappedOffsetVals",
+   "line": 378,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "liquidateTroves",
+   "line": 404,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "_getTotalsFromLiquidateTrovesSequence_RecoveryMode",
+   "line": 497,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_getTotalsFromLiquidateTrovesSequence_NormalMode",
+   "line": 594,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "batchLiquidateTroves",
+   "line": 634,
+   "vis": "public",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "_getTotalFromBatchLiquidate_RecoveryMode",
+   "line": 719,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_getTotalsFromBatchLiquidate_NormalMode",
+   "line": 805,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_addLiquidationValuesToTotals",
+   "line": 842,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_sendGasCompensation",
+   "line": 876,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_redeemCollateralFromTrove",
+   "line": 895,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_redeemCloseTrove",
+   "line": 1001,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_isValidFirstRedemptionHint",
+   "line": 1021,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "setRedemptionWhitelistStatus",
+   "line": 1042,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "addUserToWhitelistRedemption",
+   "line": 1046,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "removeUserFromWhitelistRedemption",
+   "line": 1050,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "redeemCollateral",
+   "line": 1075,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  }
+ ],
+ "TroveManagerHelpers": [
+  {
+   "fn": "_onlyBOorTM",
+   "line": 87,
+   "vis": "private",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_onlyBorrowerOperations",
+   "line": 99,
+   "vis": "private",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_onlyTroveManager",
+   "line": 108,
+   "vis": "private",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "setAddresses",
+   "line": 124,
+   "vis": "external",
+   "mods": [
+    "initializer"
+   ]
+  },
+  {
+   "fn": "getNominalICR",
+   "line": 150,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getCurrentICR",
+   "line": 166,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_getCurrentTroveAmounts",
+   "line": 180,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "applyPendingRewards",
+   "line": 194,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "applyPendingRewards",
+   "line": 208,
+   "vis": "external",
+   "mods": [
+    "onlyTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "_applyPendingRewards",
+   "line": 218,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "updateTroveRewardSnapshots",
+   "line": 260,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "_updateTroveRewardSnapshots",
+   "line": 268,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "getPendingAssetReward",
+   "line": 275,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getPendingDCHFDebtReward",
+   "line": 296,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "hasPendingRewards",
+   "line": 316,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getEntireDebtAndColl",
+   "line": 329,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "removeStake",
+   "line": 350,
+   "vis": "external",
+   "mods": [
+    "onlyBOorTM",
+    "override"
+   ]
+  },
+  {
+   "fn": "_removeStake",
+   "line": 354,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "updateStakeAndTotalStakes",
+   "line": 361,
+   "vis": "external",
+   "mods": [
+    "onlyBOorTM",
+    "override"
+   ]
+  },
+  {
+   "fn": "_updateStakeAndTotalStakes",
+   "line": 371,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_computeNewStake",
+   "line": 386,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "redistributeDebtAndColl",
+   "line": 403,
+   "vis": "external",
+   "mods": [
+    "onlyTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "_redistributeDebtAndColl",
+   "line": 413,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "closeTrove",
+   "line": 464,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "closeTrove",
+   "line": 472,
+   "vis": "external",
+   "mods": [
+    "onlyTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "_closeTrove",
+   "line": 480,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "updateSystemSnapshots_excludeCollRemainder",
+   "line": 502,
+   "vis": "external",
+   "mods": [
+    "onlyTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "_updateSystemSnapshots_excludeCollRemainder",
+   "line": 510,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "addTroveOwnerToArray",
+   "line": 528,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "_addTroveOwnerToArray",
+   "line": 537,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_removeTroveOwner",
+   "line": 549,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "getTCR",
+   "line": 572,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "checkRecoveryMode",
+   "line": 576,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_checkPotentialRecoveryMode",
+   "line": 585,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "updateBaseRateFromRedemption",
+   "line": 596,
+   "vis": "external",
+   "mods": [
+    "onlyTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "_updateBaseRateFromRedemption",
+   "line": 605,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "getRedemptionRate",
+   "line": 627,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getRedemptionRateWithDecay",
+   "line": 631,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_calcRedemptionRate",
+   "line": 635,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_getRedemptionFee",
+   "line": 647,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getRedemptionFeeWithDecay",
+   "line": 656,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_calcRedemptionFee",
+   "line": 665,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "getBorrowingRate",
+   "line": 675,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getBorrowingRateWithDecay",
+   "line": 679,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_calcBorrowingRate",
+   "line": 683,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "getBorrowingFee",
+   "line": 695,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getBorrowingFeeWithDecay",
+   "line": 704,
+   "vis": "external",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_calcBorrowingFee",
+   "line": 712,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "decayBaseRateFromBorrowing",
+   "line": 720,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "_updateLastFeeOpTime",
+   "line": 735,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_calcDecayedBaseRate",
+   "line": 744,
+   "vis": "public",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_minutesPassedSinceLastFeeOp",
+   "line": 751,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireDCHFBalanceCoversRedemption",
+   "line": 755,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireMoreThanOneTroveInSystem",
+   "line": 763,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireAmountGreaterThanZero",
+   "line": 770,
+   "vis": "public",
+   "mods": [
+    "override",
+    "pure"
+   ]
+  },
+  {
+   "fn": "_requireTCRoverMCR",
+   "line": 774,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireValidMaxFeePercentage",
+   "line": 778,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "isTroveActive",
+   "line": 790,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getTroveOwnersCount",
+   "line": 801,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getTroveFromTroveOwnersArray",
+   "line": 805,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getTrove",
+   "line": 816,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getTroveStatus",
+   "line": 840,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getTroveStake",
+   "line": 849,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getTroveDebt",
+   "line": 858,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getTroveColl",
+   "line": 867,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "setTroveDeptAndColl",
+   "line": 877,
+   "vis": "external",
+   "mods": [
+    "onlyTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "setTroveStatus",
+   "line": 889,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "decreaseTroveColl",
+   "line": 898,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "increaseTroveDebt",
+   "line": 908,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "decreaseTroveDebt",
+   "line": 918,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "increaseTroveColl",
+   "line": 928,
+   "vis": "external",
+   "mods": [
+    "onlyBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "movePendingTroveRewardsToActivePool",
+   "line": 938,
+   "vis": "external",
+   "mods": [
+    "onlyTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "_movePendingTroveRewardsToActivePool",
+   "line": 949,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "getRewardSnapshots",
+   "line": 961,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  }
+ ],
+ "BorrowerOperations": [
+  {
+   "fn": "setAddresses",
+   "line": 106,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "isContractBorrowerOps",
+   "line": 152,
+   "vis": "public",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "openTrove",
+   "line": 158,
+   "vis": "external",
+   "mods": [
+    "override",
+    "payable"
+   ]
+  },
+  {
+   "fn": "addColl",
+   "line": 281,
+   "vis": "external",
+   "mods": [
+    "override",
+    "payable"
+   ]
+  },
+  {
+   "fn": "moveETHGainToTrove",
+   "line": 301,
+   "vis": "external",
+   "mods": [
+    "override",
+    "payable"
+   ]
+  },
+  {
+   "fn": "withdrawColl",
+   "line": 323,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "withdrawDCHF",
+   "line": 333,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "repayDCHF",
+   "line": 354,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "adjustTrove",
+   "line": 363,
+   "vis": "external",
+   "mods": [
+    "override",
+    "payable"
+   ]
+  },
+  {
+   "fn": "_adjustTrove",
+   "line": 393,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "closeTrove",
+   "line": 545,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "claimCollateral",
+   "line": 597,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "_triggerBorrowingFee",
+   "line": 604,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_getCollChange",
+   "line": 624,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_updateTroveFromAdjustment",
+   "line": 638,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_moveTokensAndETHfromAdjustment",
+   "line": 658,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_activePoolAddColl",
+   "line": 683,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_withdrawDCHF",
+   "line": 703,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_repayDCHF",
+   "line": 716,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_requireSingularCollChange",
+   "line": 729,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireNonZeroAdjustment",
+   "line": 739,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireTroveisActive",
+   "line": 750,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireTroveisNotActive",
+   "line": 759,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireNonZeroDebtChange",
+   "line": 769,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_requireNotInRecoveryMode",
+   "line": 773,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireNoCollWithdrawal",
+   "line": 780,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_requireValidAdjustmentInCurrentMode",
+   "line": 787,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireICRisAboveMCR",
+   "line": 828,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireICRisAboveCCR",
+   "line": 835,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireNewICRisAboveOldICR",
+   "line": 842,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_requireNewTCRisAboveCCR",
+   "line": 849,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireAtLeastMinNetDebt",
+   "line": 856,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireValidDCHFRepayment",
+   "line": 863,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsStabilityPool",
+   "line": 874,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireSufficientDCHFBalance",
+   "line": 881,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireValidMaxFeePercentage",
+   "line": 892,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_getNewNominalICRFromTroveChange",
+   "line": 914,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_getNewICRFromTroveChange",
+   "line": 936,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_getNewTroveAmounts",
+   "line": 958,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_getNewTCRFromTroveChange",
+   "line": 975,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "getCompositeDebt",
+   "line": 993,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getMethodValue",
+   "line": 1002,
+   "vis": "private",
+   "mods": [
+    "view"
+   ]
+  }
+ ],
+ "SortedTroves": [
+  {
+   "fn": "setParams",
+   "line": 82,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "insert",
+   "line": 113,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "_insert",
+   "line": 134,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "remove",
+   "line": 199,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "_remove",
+   "line": 208,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "reInsert",
+   "line": 256,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "contains",
+   "line": 289,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "isFull",
+   "line": 296,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "isEmpty",
+   "line": 303,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getSize",
+   "line": 310,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getMaxSize",
+   "line": 317,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getFirst",
+   "line": 324,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getLast",
+   "line": 331,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getNext",
+   "line": 339,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "getPrev",
+   "line": 347,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "validInsertPosition",
+   "line": 357,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_validInsertPosition",
+   "line": 366,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_descendList",
+   "line": 401,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_ascendList",
+   "line": 436,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "findInsertPosition",
+   "line": 471,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_findInsertPosition",
+   "line": 480,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsTroveManager",
+   "line": 526,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsBOorTroveM",
+   "line": 533,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  }
+ ],
+ "DCHFToken": [
+  {
+   "fn": "isContractTroveManager",
+   "line": 33,
+   "vis": "external",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "isContractBorrowerOps",
+   "line": 37,
+   "vis": "external",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "emergencyStopMinting",
+   "line": 66,
+   "vis": "external",
+   "mods": [
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "mint",
+   "line": 71,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "burn",
+   "line": 81,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "sendToPool",
+   "line": 86,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "returnFromPool",
+   "line": 95,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "transfer",
+   "line": 106,
+   "vis": "public",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "transferFrom",
+   "line": 111,
+   "vis": "public",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "addTroveManager",
+   "line": 120,
+   "vis": "external",
+   "mods": [
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "removeTroveManager",
+   "line": 129,
+   "vis": "external",
+   "mods": [
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "addBorrowerOps",
+   "line": 136,
+   "vis": "external",
+   "mods": [
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "removeBorrowerOps",
+   "line": 145,
+   "vis": "external",
+   "mods": [
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "_removeElement",
+   "line": 154,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_requireValidRecipient",
+   "line": 166,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsBorrowerOperations",
+   "line": 179,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsBOorTroveMorSP",
+   "line": 183,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsStabilityPool",
+   "line": 192,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireCallerIsTroveMorSP",
+   "line": 199,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  }
+ ],
+ "DfrancParameters": [
+  {
+   "fn": "setAddresses",
+   "line": 56,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "setAdminContract",
+   "line": 75,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "setPriceFeed",
+   "line": 81,
+   "vis": "external",
+   "mods": [
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "sanitizeParameters",
+   "line": 88,
+   "vis": "external",
+   "mods": []
+  },
+  {
+   "fn": "setAsDefault",
+   "line": 94,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "setAsDefaultWithRemptionBlock",
+   "line": 98,
+   "vis": "external",
+   "mods": [
+    "isController"
+   ]
+  },
+  {
+   "fn": "_setAsDefault",
+   "line": 113,
+   "vis": "private",
+   "mods": []
+  },
+  {
+   "fn": "setCollateralParameters",
+   "line": 126,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "setMCR",
+   "line": 149,
+   "vis": "public",
+   "mods": [
+    "MCR",
+    "_asset",
+    "newMCR",
+    "onlyOwner",
+    "override",
+    "safeCheck"
+   ]
+  },
+  {
+   "fn": "setCCR",
+   "line": 161,
+   "vis": "public",
+   "mods": [
+    "CCR",
+    "_asset",
+    "newCCR",
+    "onlyOwner",
+    "override",
+    "safeCheck"
+   ]
+  },
+  {
+   "fn": "setPercentDivisor",
+   "line": 173,
+   "vis": "public",
+   "mods": [
+    "Divisor",
+    "Percent",
+    "_asset",
+    "onlyOwner",
+    "override",
+    "precentDivisor",
+    "safeCheck"
+   ]
+  },
+  {
+   "fn": "setBorrowingFeeFloor",
+   "line": 185,
+   "vis": "public",
+   "mods": [
+    "Borrowing",
+    "Fee",
+    "Floor",
+    "_asset",
+    "borrowingFeeFloor",
+    "onlyOwner",
+    "override",
+    "safeCheck"
+   ]
+  },
+  {
+   "fn": "setMaxBorrowingFee",
+   "line": 200,
+   "vis": "public",
+   "mods": [
+    "Borrowing",
+    "Fee",
+    "Max",
+    "_asset",
+    "maxBorrowingFee",
+    "onlyOwner",
+    "override",
+    "safeCheck"
+   ]
+  },
+  {
+   "fn": "setDCHFGasCompensation",
+   "line": 215,
+   "vis": "public",
+   "mods": [
+    "Compensation",
+    "Gas",
+    "_asset",
+    "ether",
+    "gasCompensation",
+    "onlyOwner",
+    "override",
+    "safeCheck"
+   ]
+  },
+  {
+   "fn": "setMinNetDebt",
+   "line": 227,
+   "vis": "public",
+   "mods": [
+    "Debt",
+    "Min",
+    "Net",
+    "_asset",
+    "ether",
+    "minNetDebt",
+    "onlyOwner",
+    "override",
+    "safeCheck"
+   ]
+  },
+  {
+   "fn": "setRedemptionFeeFloor",
+   "line": 239,
+   "vis": "public",
+   "mods": [
+    "Fee",
+    "Floor",
+    "Redemption",
+    "_asset",
+    "onlyOwner",
+    "override",
+    "redemptionFeeFloor",
+    "safeCheck"
+   ]
+  },
+  {
+   "fn": "removeRedemptionBlock",
+   "line": 252,
+   "vis": "external",
+   "mods": [
+    "onlyOwner",
+    "override"
+   ]
+  }
+ ],
+ "AdminContract": [
+  {
+   "fn": "setAddresses",
+   "line": 32,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "addNewCollateral",
+   "line": 65,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  }
+ ],
+ "PriceFeed": [
+  {
+   "fn": "setAddresses",
+   "line": 40,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "setAdminContract",
+   "line": 49,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "addOracle",
+   "line": 55,
+   "vis": "external",
+   "mods": [
+    "isController",
+    "override"
+   ]
+  },
+  {
+   "fn": "getDirectPrice",
+   "line": 88,
+   "vis": "public",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "fetchPrice",
+   "line": 110,
+   "vis": "external",
+   "mods": [
+    "override"
+   ]
+  },
+  {
+   "fn": "_getIndexedPrice",
+   "line": 178,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_getChainlinkResponses",
+   "line": 182,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_chainlinkIsBroken",
+   "line": 218,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_badChainlinkResponse",
+   "line": 225,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_chainlinkIsFrozen",
+   "line": 246,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_chainlinkPriceChangeAboveMax",
+   "line": 254,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_scaleChainlinkPriceByDigits",
+   "line": 281,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_changeStatus",
+   "line": 297,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_storeChainlinkIndex",
+   "line": 302,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_storeChainlinkPrice",
+   "line": 315,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_storePrice",
+   "line": 328,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_storeIndex",
+   "line": 333,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_getCurrentChainlinkResponse",
+   "line": 340,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_getPrevChainlinkResponse",
+   "line": 368,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  }
+ ],
+ "CommunityIssuance": [
+  {
+   "fn": "setAddresses",
+   "line": 69,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "override"
+   ]
+  },
+  {
+   "fn": "setAdminContract",
+   "line": 89,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "addFundToStabilityPool",
+   "line": 95,
+   "vis": "external",
+   "mods": [
+    "isController",
+    "override"
+   ]
+  },
+  {
+   "fn": "removeFundFromStabilityPool",
+   "line": 103,
+   "vis": "external",
+   "mods": [
+    "_pool",
+    "activeStabilityPoolOnly",
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "addFundToStabilityPoolFrom",
+   "line": 123,
+   "vis": "external",
+   "mods": [
+    "isController",
+    "override"
+   ]
+  },
+  {
+   "fn": "_addFundToStabilityPoolFrom",
+   "line": 131,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "transferFundToAnotherStabilityPool",
+   "line": 149,
+   "vis": "external",
+   "mods": [
+    "_receiver",
+    "_target",
+    "activeStabilityPoolOnly",
+    "onlyOwner",
+    "override"
+   ]
+  },
+  {
+   "fn": "disableStabilityPool",
+   "line": 174,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "issueMON",
+   "line": 180,
+   "vis": "external",
+   "mods": [
+    "onlyStabilityPool",
+    "override"
+   ]
+  },
+  {
+   "fn": "_issueMON",
+   "line": 184,
+   "vis": "internal",
+   "mods": [
+    "_pool",
+    "isStabilityPool"
+   ]
+  },
+  {
+   "fn": "_getLastUpdateTokenDistribution",
+   "line": 204,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "sendMON",
+   "line": 220,
+   "vis": "external",
+   "mods": [
+    "onlyStabilityPool",
+    "override"
+   ]
+  },
+  {
+   "fn": "setWeeklyDfrancDistribution",
+   "line": 231,
+   "vis": "external",
+   "mods": [
+    "_stabilityPool",
+    "isController",
+    "isStabilityPool"
+   ]
+  }
+ ],
+ "MONStaking": [
+  {
+   "fn": "setAddresses",
+   "line": 65,
+   "vis": "external",
+   "mods": [
+    "initializer",
+    "override"
+   ]
+  },
+  {
+   "fn": "stake",
+   "line": 104,
+   "vis": "external",
+   "mods": [
+    "nonReentrant",
+    "override",
+    "whenNotPaused"
+   ]
+  },
+  {
+   "fn": "unstake",
+   "line": 148,
+   "vis": "external",
+   "mods": [
+    "nonReentrant",
+    "override"
+   ]
+  },
+  {
+   "fn": "pause",
+   "line": 191,
+   "vis": "public",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "unpause",
+   "line": 195,
+   "vis": "external",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "changeTreasuryAddress",
+   "line": 199,
+   "vis": "public",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "increaseF_Asset",
+   "line": 207,
+   "vis": "external",
+   "mods": [
+    "callerIsTroveManager",
+    "override"
+   ]
+  },
+  {
+   "fn": "increaseF_DCHF",
+   "line": 232,
+   "vis": "external",
+   "mods": [
+    "callerIsBorrowerOperations",
+    "override"
+   ]
+  },
+  {
+   "fn": "sendToTreasury",
+   "line": 248,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "getPendingAssetGain",
+   "line": 257,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_getPendingAssetGain",
+   "line": 266,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "getPendingDCHFGain",
+   "line": 278,
+   "vis": "external",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "_getPendingDCHFGain",
+   "line": 282,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_updateUserSnapshots",
+   "line": 290,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_sendAssetGainToUser",
+   "line": 296,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_sendAsset",
+   "line": 302,
+   "vis": "internal",
+   "mods": []
+  },
+  {
+   "fn": "_requireUserHasStake",
+   "line": 335,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  }
+ ],
+ "MONToken": [],
+ "ERC20Permit": [
+  {
+   "fn": "permit",
+   "line": 28,
+   "vis": "external",
+   "mods": []
+  },
+  {
+   "fn": "nonces",
+   "line": 45,
+   "vis": "external",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "permit",
+   "line": 82,
+   "vis": "external",
+   "mods": [
+    "override",
+    "virtual"
+   ]
+  },
+  {
+   "fn": "nonces",
+   "line": 109,
+   "vis": "public",
+   "mods": [
+    "override",
+    "view"
+   ]
+  },
+  {
+   "fn": "chainId",
+   "line": 113,
+   "vis": "public",
+   "mods": [
+    "view"
+   ]
+  }
+ ],
+ "DfrancBase": [
+  {
+   "fn": "setDfrancParameters",
+   "line": 23,
+   "vis": "public",
+   "mods": [
+    "onlyOwner"
+   ]
+  },
+  {
+   "fn": "_getCompositeDebt",
+   "line": 31,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_getNetDebt",
+   "line": 35,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_getCollGasCompensation",
+   "line": 40,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "getEntireSystemColl",
+   "line": 48,
+   "vis": "public",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "getEntireSystemDebt",
+   "line": 55,
+   "vis": "public",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_getTCR",
+   "line": 62,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_checkRecoveryMode",
+   "line": 71,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_requireUserAcceptsFee",
+   "line": 77,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  }
+ ],
+ "SafetyTransfer": [
+  {
+   "fn": "decimalsCorrection",
+   "line": 8,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  }
+ ],
+ "DfrancMath": [
+  {
+   "fn": "_min",
+   "line": 22,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_max",
+   "line": 26,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "decMul",
+   "line": 37,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_decPow",
+   "line": 61,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_getAbsoluteDifference",
+   "line": 90,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_computeNominalCR",
+   "line": 94,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  },
+  {
+   "fn": "_computeCR",
+   "line": 105,
+   "vis": "internal",
+   "mods": [
+    "pure"
+   ]
+  }
+ ],
+ "Initializable": [
+  {
+   "fn": "_disableInitializers",
+   "line": 80,
+   "vis": "internal",
+   "mods": [
+    "virtual"
+   ]
+  },
+  {
+   "fn": "_getInitializedVersion",
+   "line": 91,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  },
+  {
+   "fn": "_isInitializing",
+   "line": 98,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  }
+ ],
+ "CheckContract": [
+  {
+   "fn": "checkContract",
+   "line": 6,
+   "vis": "internal",
+   "mods": [
+    "view"
+   ]
+  }
+ ]
+}
