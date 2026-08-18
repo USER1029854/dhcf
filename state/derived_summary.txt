@@ -1,0 +1,36 @@
+PER-ASSET CONFIG (DfrancParameters 0x6f99...cc42)
+  [ETH] MCR=110%  CCR=150%  MIN_NET_DEBT=2000 DCHF  GAS_COMP=200 DCHF
+        BORROW_FEE_FLOOR=0.50%  MAX_BORROW_FEE=5.0%  REDEMPTION_FEE_FLOOR=0.50%  PERCENT_DIVISOR=100
+        redemptionBlock until=2022-10-09 17:04:35 UTC (past -> redemptions ENABLED)
+  [WBTC] MCR=110%  CCR=150%  MIN_NET_DEBT=2000 DCHF  GAS_COMP=200 DCHF
+        BORROW_FEE_FLOOR=0.50%  MAX_BORROW_FEE=5.0%  REDEMPTION_FEE_FLOOR=0.50%  PERCENT_DIVISOR=100
+        redemptionBlock until=2022-10-09 17:16:11 UTC (past -> redemptions ENABLED)
+
+BALANCES (physical vs internal accounting)
+  ActivePool     ETH: actual 6.2616 / book 6.2616   WBTC: actual 2.48580886 / book(1e18) 2.48580603
+                 DCHFDebt[ETH]=7498.90  DCHFDebt[WBTC]=13511.08
+  DefaultPool    ETH: actual 20.3110 / book 20.3110   WBTC: actual 0.08606624 / book 0.08606625
+                 DCHFDebt[ETH]=24887.92  DCHFDebt[WBTC]=6684.13
+  CollSurplus    ETH: actual 23.7054 / book 23.7054   WBTC: actual 2.32048199 / book 2.32048204
+  SP_ETH         ETH: actual 16.4839 / book 16.4839   totalDCHFDeposits=0.00
+  SP_WBTC        WBTC: actual 0.23461150 / book 0.23460797   totalDCHFDeposits=0.00
+
+SUPPLY RECONCILIATION
+  DCHF totalSupply           = 52582.02
+  Sum pool DCHFDebts (A+D)    = 52582.02   (delta = 0.00)
+  MON totalSupply=100000000  treasury=0x83737eae72ba7597b36494d723fbf58cafee8a69
+
+ORACLE (PriceFeed 0x09ab...e9da)
+  status=0 (0=chainlinkWorking)  TIMEOUT=14400s (4h)  maxDevPrevRound=50%  maxDiffBetweenOracles=5%
+  stored lastGoodPrice: ETH=1690.63 CHF  WBTC=70452.70 CHF
+  stored lastGoodIndex: ETH=1.26797  WBTC=1.27256
+  live Chainlink ETHUSD: 1892.8978  updatedAt=2026-08-18 04:29:47 UTC
+  live Chainlink BTCUSD: 64071.4094  updatedAt=2026-08-18 04:27:47 UTC
+  live Chainlink CHFUSD: 1.2318  updatedAt=2026-08-18 04:12:59 UTC
+
+MON ISSUANCE (CommunityIssuance 0x0fa4...3d86)
+  CI MON balance=108990
+  SP_ETH: supplyCap=5279579  totalIssued=5279579  (issued==cap -> EXHAUSTED)
+  SP_WBTC: supplyCap=5279579  totalIssued=5279579  (issued==cap -> EXHAUSTED)
+
+STAKING: MONStaking paused=False  MON held=14605475

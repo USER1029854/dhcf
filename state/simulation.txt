@@ -1,0 +1,23 @@
+Simulated caller (unprivileged EOA): 0x00000000000000000000000000000000DeaDBeef
+Each call SHOULD revert if the guard is real.
+
+ActivePool.sendAsset(ETH, attacker, 1e18)            -> REVERT  (execution reverted: ActivePool: Caller is neither BorrowerOperations nor TroveManager nor )
+DCHFToken.mint(ETH, attacker, 1e24)                  -> REVERT  (execution reverted: DCHFToken: Caller is not BorrowerOperations)
+DCHFToken.addTroveManager(attacker)                  -> REVERT  (execution reverted: Ownable: caller is not the owner)
+DfrancParameters.setMCR(ETH, 1e18)                   -> REVERT  (execution reverted: Ownable: caller is not the owner)
+StabilityPoolManager.addStabilityPool(ETH, attacker) -> REVERT  (execution reverted: Invalid permissions)
+PriceFeed.addOracle(ETH, evil, evil)                 -> REVERT  (execution reverted: Invalid Permission)
+ActivePool.receivedERC20(WBTC, 1e8)                  -> REVERT  (execution reverted: ActivePool: Caller is neither BO nor Default Pool)
+
+INTERPRETATION
+--------------
+All fund-moving and authority functions correctly reject an arbitrary unprivileged
+caller (0x…DeadBeef), each with the revert reason its verified source predicts. This
+empirically confirms the access-control model documented in ARCHITECTURE.md §2 and §4.
+
+Scope note (per audit methodology): simulation proves a guard EXISTS; it cannot prove a
+guard's secret is not public. Here the guards are plain owner()/role-mapping checks in
+VERIFIED source — there is no signature-gated secret embedded in these contracts, so
+there is no hidden-key surface within the DCHF code itself. The only secret-key trust in
+the system is the Gnosis Safe signer set, which is off-chain and catalogued in
+UNRESOLVED.md §3.

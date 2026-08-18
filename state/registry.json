@@ -1,0 +1,37 @@
+{
+  "chain": "ethereum-mainnet (chainid 1)",
+  "target": "DeFi Franc (DCHF) multi-collateral CDP stablecoin",
+  "contracts": [
+    {"label":"ActivePool","address":"0x77E034c8A1392d99a2C776A6C1593866fEE36a33","role":"core: holds all collateral (ETH+WBTC) backing active troves","dir":"contracts/verified/ActivePool"},
+    {"label":"StabilityPool_ETH","address":"0x6a9f9d6f5d672a9784c5e560a9648de6cbe2c548","role":"core: ETH stability pool (DCHF deposits absorb ETH-trove liquidations)","dir":"contracts/verified/StabilityPool_ETH"},
+    {"label":"StabilityPool_WBTC","address":"0x04556d845f12ff7d8ff04a37f40387dd1b454c4b","role":"core: WBTC stability pool (byte-identical to ETH SP)","dir":"contracts/verified/StabilityPool_WBTC"},
+    {"label":"TroveManager","address":"0x99838142189adE67c1951f9c57c3333281334F7F","role":"core: trove state, liquidation, redemption; DCHF minter","dir":"contracts/verified/TroveManager"},
+    {"label":"TroveManagerHelpers","address":"0xaaacb8c39bd5acbb0a236112df8d15411161e518","role":"core: split-out trove math/liquidation helpers (called by TroveManager & others)","dir":"contracts/verified/TroveManagerHelpers"},
+    {"label":"StabilityPoolManager","address":"0x202FbFF035188f9f0525E144C8B3F8249a74aD21","role":"core: registry asset->stabilityPool","dir":"contracts/verified/StabilityPoolManager"},
+    {"label":"BorrowerOperations","address":"0x9eB2Ce1be2DD6947e4f5Aabe33106f48861DFD74","role":"core: open/adjust/close troves; DCHF minter","dir":"contracts/verified/BorrowerOperations"},
+    {"label":"DefaultPool","address":"0xC1f785B74a01dd9FAc0dE6070bC583fe9eaC7Ab5","role":"core: holds redistributed collateral/debt from liquidations","dir":"contracts/verified/DefaultPool"},
+    {"label":"CollSurplusPool","address":"0xA622c3bdBFBE749B1984bc127bFB500e196F594b","role":"core: holds claimable collateral surplus after liquidation/redemption","dir":"contracts/verified/CollSurplusPool"},
+    {"label":"DCHFToken","address":"0x045da4bFe02B320f4403674B3b7d121737727A36","role":"TARGET/token: CHF-pegged stablecoin; mint gated to TroveManager+BorrowerOperations","dir":"contracts/verified/DCHFToken"},
+    {"label":"DfrancParameters","address":"0x6f9990b242873d7396511f2630412a3fcecacc42","role":"config: per-asset MCR/CCR/fees/gas-comp/min-debt/redemption-block","dir":"contracts/verified/DfrancParameters"},
+    {"label":"AdminContract","address":"0x2748c55219dca1d9d3c3a57505e99bb04e42f254","role":"authority: adds collateral, deploys/registers stability pools, funds MON issuance","dir":"contracts/verified/AdminContract"},
+    {"label":"SortedTroves","address":"0x1dd69453a685c735f2ab43e2169b57e9edf72286","role":"core: sorted list of troves by ICR","dir":"contracts/verified/SortedTroves"},
+    {"label":"CommunityIssuance","address":"0x0fa46e8cbceff8468db2ec2fd77731d8a11d3d86","role":"core: distributes MON rewards to stability providers","dir":"contracts/verified/CommunityIssuance"},
+    {"label":"MONStaking","address":"0x8bc3702c35d33e5df7cb0f06cb72a0c34ae0c56f","role":"core: MON staking earns borrow/redemption fees","dir":"contracts/verified/MONStaking"},
+    {"label":"PriceFeed","address":"0x09ab3c0ce6cb41c13343879a667a6bdad65ee9da","role":"oracle: per-asset Chainlink price x CHF index -> asset/CHF price","dir":"contracts/verified/PriceFeed"},
+    {"label":"MONToken","address":"0x1ea48b9965bb5086f3b468e50ed93888a661fc17","role":"token: MON governance/reward token (fixed supply, no mint)","dir":"contracts/verified/MONToken"},
+    {"label":"WBTC","address":"0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599","role":"collateral token (canonical WBTC)","dir":"contracts/verified/WBTC_token"},
+    {"label":"Safe_proxy_owner","address":"0x83737eae72ba7597b36494d723fbf58cafee8a69","role":"AUTHORITY: 2-of-3 Gnosis Safe, owns nearly all core contracts + MON treasury","dir":"contracts/upstream (proxy)"},
+    {"label":"GnosisSafe_Singleton","address":"0xd9db270c1b5e3bd161e8c8503c55ceabee709552","role":"authority impl: canonical Gnosis Safe v1.3.0 singleton","dir":"contracts/upstream/GnosisSafe_Singleton"},
+    {"label":"Chainlink_ETHUSD","address":"0x5f4ec3df9cbd43714fe2740f5e3616155c5b8419","role":"oracle proxy: ETH/USD","dir":"contracts/upstream/Chainlink_ETHUSD"},
+    {"label":"Chainlink_BTCUSD","address":"0xf4030086522a5beea4988f8ca5b36dbc97bee88c","role":"oracle proxy: BTC/USD","dir":"contracts/upstream/Chainlink_BTCUSD"},
+    {"label":"Chainlink_CHFUSD","address":"0x449d117117838ffa61263b61da6301aa2a88b13a","role":"oracle proxy: CHF/USD (peg index, shared by both assets)","dir":"contracts/upstream/Chainlink_CHFUSD"}
+  ],
+  "off_chain_and_eoa": [
+    {"label":"Safe owner 1 (EOA)","address":"0x8c013078c75e790ffed8e11342ecff53c5cd73a8"},
+    {"label":"Safe owner 2 (EOA)","address":"0x7aff0f97357a7e8b577298f2fe81e6330975e28d"},
+    {"label":"Safe owner 3 (EOA)","address":"0x67733cfa01b42900057759a8eba97afed02c44e8"},
+    {"label":"Chainlink ETH/USD underlying aggregator","address":"0x7d4e742018fb52e48b08be73d041c18b21de6fb5"},
+    {"label":"Chainlink BTC/USD underlying aggregator","address":"0x4a3411ac2948b33c69666b35cc6d055b27ea84f1"},
+    {"label":"Chainlink CHF/USD underlying aggregator","address":"0x5763fc5fabca9080ad12bcafae7a335023b1f9b4"}
+  ]
+}

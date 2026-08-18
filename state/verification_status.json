@@ -1,0 +1,140 @@
+{
+  "ActivePool": {
+    "status": "VERIFIED",
+    "codelen": 13430,
+    "codehash12": "d2c85acf1004",
+    "proxy": "0"
+  },
+  "StabilityPool_ETH": {
+    "status": "VERIFIED",
+    "codelen": 30786,
+    "codehash12": "44b0fdf55afc",
+    "proxy": "0"
+  },
+  "StabilityPool_WBTC": {
+    "status": "VERIFIED",
+    "codelen": 30786,
+    "codehash12": "44b0fdf55afc",
+    "proxy": "0"
+  },
+  "TroveManager": {
+    "status": "VERIFIED",
+    "codelen": 46130,
+    "codehash12": "a4697387231a",
+    "proxy": "0"
+  },
+  "TroveManagerHelpers": {
+    "status": "VERIFIED",
+    "codelen": 30636,
+    "codehash12": "531ac514e5ab",
+    "proxy": "0"
+  },
+  "StabilityPoolManager": {
+    "status": "VERIFIED",
+    "codelen": 5920,
+    "codehash12": "dd1f08b02933",
+    "proxy": "0"
+  },
+  "BorrowerOperations": {
+    "status": "VERIFIED",
+    "codelen": 38678,
+    "codehash12": "145ff3d160b5",
+    "proxy": "0"
+  },
+  "DefaultPool": {
+    "status": "VERIFIED",
+    "codelen": 10610,
+    "codehash12": "d55a41c86ee6",
+    "proxy": "0"
+  },
+  "CollSurplusPool": {
+    "status": "VERIFIED",
+    "codelen": 10684,
+    "codehash12": "52cdad3452d4",
+    "proxy": "0"
+  },
+  "DCHFToken": {
+    "status": "VERIFIED",
+    "codelen": 16976,
+    "codehash12": "c1ba7c1ed543",
+    "proxy": "0"
+  },
+  "DfrancParameters": {
+    "status": "VERIFIED",
+    "codelen": 14540,
+    "codehash12": "1d28707f6d18",
+    "proxy": "0"
+  },
+  "AdminContract": {
+    "status": "VERIFIED",
+    "codelen": 5588,
+    "codehash12": "c5f06098f31d",
+    "proxy": "0"
+  },
+  "SortedTroves": {
+    "status": "VERIFIED",
+    "codelen": 14930,
+    "codehash12": "7ea6ae9f6014",
+    "proxy": "0"
+  },
+  "CommunityIssuance": {
+    "status": "VERIFIED",
+    "codelen": 12848,
+    "codehash12": "fd7f6e2c1aa6",
+    "proxy": "0"
+  },
+  "MONStaking": {
+    "status": "VERIFIED",
+    "codelen": 17490,
+    "codehash12": "eff4dd94447a",
+    "proxy": "0"
+  },
+  "PriceFeed": {
+    "status": "VERIFIED",
+    "codelen": 11132,
+    "codehash12": "9e790ea5230d",
+    "proxy": "0"
+  },
+  "MONToken": {
+    "status": "VERIFIED",
+    "codelen": 6456,
+    "codehash12": "45fdb895f586",
+    "proxy": "0"
+  },
+  "WBTC": {
+    "status": "VERIFIED",
+    "codelen": 9166,
+    "codehash12": "1377b93c57d7",
+    "proxy": "0"
+  },
+  "Safe_proxy_owner": {
+    "status": "VERIFIED",
+    "codelen": 344,
+    "codehash12": "5b8bff324e02",
+    "proxy": "1"
+  },
+  "GnosisSafe_Singleton": {
+    "status": "VERIFIED",
+    "codelen": 45918,
+    "codehash12": "2c242392114e",
+    "proxy": "0"
+  },
+  "Chainlink_ETHUSD": {
+    "status": "VERIFIED",
+    "codelen": 19144,
+    "codehash12": "ed698309290d",
+    "proxy": "0"
+  },
+  "Chainlink_BTCUSD": {
+    "status": "VERIFIED",
+    "codelen": 19144,
+    "codehash12": "ed698309290d",
+    "proxy": "0"
+  },
+  "Chainlink_CHFUSD": {
+    "status": "VERIFIED",
+    "codelen": 19144,
+    "codehash12": "ed698309290d",
+    "proxy": "0"
+  }
+}
